@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KFU.KazanBook.API", "KFU.KazanBook.API\KFU.KazanBook.API.csproj", "{88339D2C-50EE-4EE6-BC62-8F63983ACC17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KFU.KazanBook.DAL", "KFU.KazanBook.DAL\KFU.KazanBook.DAL.csproj", "{871E2A2D-6583-407C-B490-847AA0169A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KFU.KazanBook.BAL", "KFU.KazanBook.BAL\KFU.KazanBook.BAL.csproj", "{B49B4AD5-824E-48CC-831C-17B63783C623}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{88339D2C-50EE-4EE6-BC62-8F63983ACC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88339D2C-50EE-4EE6-BC62-8F63983ACC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88339D2C-50EE-4EE6-BC62-8F63983ACC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871E2A2D-6583-407C-B490-847AA0169A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871E2A2D-6583-407C-B490-847AA0169A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871E2A2D-6583-407C-B490-847AA0169A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871E2A2D-6583-407C-B490-847AA0169A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49B4AD5-824E-48CC-831C-17B63783C623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49B4AD5-824E-48CC-831C-17B63783C623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49B4AD5-824E-48CC-831C-17B63783C623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49B4AD5-824E-48CC-831C-17B63783C623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

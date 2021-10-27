@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,10 @@ namespace KFU.KazanBook.API
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+			services.Configure<IISServerOptions>(options =>
+			{
+				options.AllowSynchronousIO = true;
+			});
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,8 +50,12 @@ namespace KFU.KazanBook.API
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllerRoute(
+					name: "books",
+					pattern: "Books/{id}",
+					defaults: new { controller = "Books", action = "Index" });
+				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Book}/{action=Index}/{id?}"
+					pattern: "{controller=Books}/{action=Index}/{id?}"
 				);
 			});
 		}
