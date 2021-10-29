@@ -5,22 +5,13 @@ using System.Threading.Tasks;
 
 namespace KFU.KazanBook.DAL.Models
 {
-	public class Author
+	public class Author : IBaseModel
 	{
 		public Guid Id { get; set; }
-		public string SurName { get; set; }
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-		public DateTime DateOfBirth { get; set; }
-		public DateTime DateOfDeath { get; set; }
-	}
-	public class AuthorViewModel : BaseViewModel
-	{
-		public Guid Id { get; set; }
-		public string SurName { get; set; }
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-		public DateTime DateOfBirth { get; set; }
-		public DateTime DateOfDeath { get; set; }
+		public string surname { get; set; }
+		public string firstname { get; set; }
+		public string lastname { get; set; }
+		public string birthDate { get; set; }
+		public string deathDate { get; set; }
 	}
 }

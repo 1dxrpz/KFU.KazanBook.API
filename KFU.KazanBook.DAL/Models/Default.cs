@@ -4,7 +4,7 @@ using System.Text;
 
 namespace KFU.KazanBook.DAL.Models
 {
-	public interface BaseViewModel
+	public class Default : IBaseModel
 	{
 	}
 }

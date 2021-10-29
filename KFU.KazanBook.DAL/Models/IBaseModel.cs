@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KFU.KazanBook.BAL
+namespace KFU.KazanBook.DAL.Models
 {
-	class Insert
+	public interface IBaseModel
 	{
 	}
 }

@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace KFU.KazanBook.DAL.Models
 {
-	public class Book : IBaseModel
+	public class BookViewModel
 	{
 		public Guid Id { get; set; }
 		public Guid authorId { get; set; }
 		public string title { get; set; }
-		public string year { get; set; }
+		public DateTime year { get; set; }
 		public int numberPages { get; set; }
 		public string country { get; set; }
 	}

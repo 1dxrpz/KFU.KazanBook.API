@@ -51,12 +51,19 @@ namespace KFU.KazanBook.API
 			{
 				endpoints.MapControllerRoute(
 					name: "books",
-					pattern: "Books/{id}",
+					pattern: "Books/{id?}",
 					defaults: new { controller = "Books", action = "Index" });
 				endpoints.MapControllerRoute(
-					name: "default",
-					pattern: "{controller=Books}/{action=Index}/{id?}"
-				);
+					name: "authors",
+					pattern: "Authors/{id?}",
+					defaults: new { controller = "Authors", action = "Index" });
+
+				//endpoints.MapControllerRoute(
+				//	name: "default",
+				//	pattern: "Books",
+				//	defaults: new { controller = "Books", action = "Default" });
+
+				//endpoints.MapDefaultControllerRoute();
 			});
 		}
 	}
